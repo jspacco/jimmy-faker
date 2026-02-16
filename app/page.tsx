@@ -8,7 +8,6 @@ export default function JimmyChat() {
   const [input, setInput] = useState("");
 
   const { messages, sendMessage, status, error } = useChat({
-    api: "/api/chat",
     onError: (e) => console.error("useChat error:", e),
   });
 
