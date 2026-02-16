@@ -1,3 +1,4 @@
+export const runtime = 'nodejs';
 import { google } from "@ai-sdk/google";
 import { streamText, convertToModelMessages } from "ai";
 
