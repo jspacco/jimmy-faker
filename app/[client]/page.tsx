@@ -23,7 +23,7 @@ export default function ClientChat() {
     api: "/api/chat",
     // Some versions do not include this reliably; we also send persona via metadata per message.
     body: { persona: clientName },
-    onError: (e) => console.error("useChat error:", e),
+    onError: (e: unknown) => console.error("useChat error:", e),
   } as any);
 
   const exportJSON = () => {
