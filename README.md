@@ -1,3 +1,22 @@
+# Jimmy Faker: Fake AI Clients
+
+Check out the ["Jimmy Faker" demo](https://jimmy-faker.vercel.app/jimmy).
+
+Jimmy is a muscle head from Jersey who runs a gym with paper records. He really needs a database to track details about his business so he can spend more time on protein shakes and power lifting.
+
+Jimmy is sanboxed by a detailed system prompt so that he (hopefully) doesn't break character.
+
+Students need to extract enough information from Jimmy to build a data model.
+
+## Want to run your own faker clients?
+
+* First, copy this git repo! It's a template
+* Add your own client to 
+* Create a Vercel account
+* Set up a free-tier Vercel proejct
+* 
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started

@@ -24,3 +24,69 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* ===== Home Page Styling ===== */
+
+.home-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0a0a0a;
+  padding: 40px;
+}
+
+.home-card {
+  width: 100%;
+  max-width: 800px;
+  background: #0b1220;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 40px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+}
+
+.home-card h1 {
+  margin: 0 0 8px 0;
+  font-size: 28px;
+}
+
+.subtitle {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 30px;
+}
+
+.persona-grid {
+  display: grid;
+  gap: 16px;
+}
+
+.persona-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 22px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  text-decoration: none;
+  color: #e5e7eb;
+  transition: all 0.15s ease;
+}
+
+.persona-card:hover {
+  background: rgba(59, 130, 246, 0.15);
+  border-color: rgba(59, 130, 246, 0.4);
+  transform: translateY(-2px);
+}
+
+.persona-name {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.persona-arrow {
+  font-size: 18px;
+  opacity: 0.6;
+}
