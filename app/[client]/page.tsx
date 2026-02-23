@@ -13,6 +13,21 @@ function messageToText(m: any): string {
     .join("");
 }
 
+function escapeHtml(s: string): string {
+  return s
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;");
+}
+
+function renderBasicMarkdown(text: string): string {
+  const escaped = escapeHtml(text);
+
+  return escaped
+    .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
+    .replace(/\*(.*?)\*/g, "<em>$1</em>");
+}
+
 export default function ClientChat() {
   const params = useParams();
   const clientName = (params.client as string) || "jimmy";
@@ -65,7 +80,9 @@ export default function ClientChat() {
                 <div className="sender-label">
                   {m.role === "user" ? "Student" : clientName}
                 </div>
-                <div className="text-content">{messageText}</div>
+                <div className="text-content"
+                  dangerouslySetInnerHTML={{ __html: renderBasicMarkdown(messageText) }}
+                />
               </div>
             </div>
           );
